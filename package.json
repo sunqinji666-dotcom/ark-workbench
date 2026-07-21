@@ -1,0 +1,10 @@
+{
+  "name": "ark-workbench",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --check server.js && node --check public/app.js"
+  }
+}

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ark Workbench</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <div class="masthead-copy">
+          <p class="eyebrow">ark workbench</p>
+          <h1>极简生图工位</h1>
+          <p class="lede">输入命令，盯住进度，自动归档。少一点视觉噪音，让操作本身更清楚。</p>
+        </div>
+        <div class="masthead-meta">
+          <span id="apiState" class="badge"></span>
+          <button id="openFolder" class="ghost">打开文件夹</button>
+        </div>
+      </header>
+
+      <section class="command-rail">
+        <div class="panel-head">
+          <h2>命令</h2>
+          <span class="badge">gen / rerun / open / delete</span>
+        </div>
+        <div class="command-stack command-row">
+          <input id="commandInput" class="command-input" placeholder='gen 黑洞里冲出一辆复古列车 --nw --size 2K' />
+          <button id="runCommand" class="primary">执行</button>
+          <button id="openFolder" class="ghost">打开文件夹</button>
+        </div>
+        <div class="sidebar-note">
+          <p>常用写法</p>
+          <code>gen prompt --nw --size 2K</code>
+          <code>rerun &lt;id&gt;</code>
+          <code>reveal</code>
+        </div>
+      </section>
+
+      <section class="summary summary-row" id="stats"></section>
+
+      <section class="section-block">
+        <div class="panel-head">
+          <h2>任务</h2>
+          <input id="searchInput" class="search-input" placeholder="搜索提示词或文件名" />
+        </div>
+        <div id="jobs" class="jobs"></div>
+      </section>
+
+      <section class="section-block">
+        <div class="panel-head">
+          <h2>图片库</h2>
+          <span class="badge">自动扫描本地文件夹</span>
+        </div>
+        <div id="gallery" class="gallery"></div>
+      </section>
+    </main>
+
+    <script type="module" src="/app.js"></script>
+  </body>
+</html>
