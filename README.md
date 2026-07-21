@@ -4,6 +4,8 @@
 
 Contact: **Jacksun** · [qinji@jack-sun.com](mailto:qinji@jack-sun.com)
 
+![Ark Workbench 主视觉：本地图片生成队列与素材管理的概念示意。](docs/assets/ark-workbench-hero-v1.png)
+
 - 命令式输入生成
 - 实时看任务状态
 - 自动把图片保存到本地
