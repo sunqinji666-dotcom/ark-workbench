@@ -1,5 +1,7 @@
 # Ark Workbench
 
+
+![ark-workbench project visual](docs/assets/ark-workbench-hero.png)
 > 一个本地运行的火山方舟图片生成面板：提交提示词、观察队列、管理本机生成结果。
 
 Contact: **Jacksun** · [qinji@jack-sun.com](mailto:qinji@jack-sun.com)
